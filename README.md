@@ -1,7 +1,7 @@
 ## Movies-App
 
 This a demo, built by Flexible Factory for Zone, using TMDB api, allowing the user to find movies by genre and rating.
-It uses react and mobx.
+It uses react (https://reactjs.org/) and mobx  (https://mobx.js.org/)
 
 # NB API key has been removed to avoid exposing on github
 
