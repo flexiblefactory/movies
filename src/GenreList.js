@@ -7,13 +7,13 @@ export class GenreList extends Component{
         const { api } = this.props;
         return (
             
-        <div style={{ float: 'left' }}>
+        <div  className="genrelist">
           {
-
             api.availableGenres.map(genre => {
+              
               const numMoviesInGenre = api.nowPlayingByGenres.get(genre.id).length;
               return (
-                <div style={{ padding: '10px', style: 'inline-block' }} key={`genre${genre.id}`}>
+                <div className="genre" key={genre.id}>
                   <input
                       id={`genre${genre.id}`}
                       name={`genre${genre.id}`}
@@ -35,7 +35,7 @@ export class GenreList extends Component{
               );
 
             })}
-            <div style={{ color: 'green', padding:'10px' }}>
+            <div className="content">
               powered by <a href="https://www.themoviedb.org/documentation/api" target="tmdb">TMDB API</a>
             </div>
         </div>

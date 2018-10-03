@@ -27,7 +27,7 @@ export class Movie extends Component {
                     <ul>
                         {
                             movie.genre_ids
-                                .map(genreId => <li key={`genre${genreId}`}>{api.genresById[genreId].name}</li>)
+                                .map(genreId => <li key={genreId}>{api.genresById[genreId].name}</li>)
                         }
                     </ul>
 
