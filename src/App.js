@@ -64,7 +64,7 @@ class App extends Component {
         {
           api.selectedMovies.map(movie => {
 
-            return <Movie key={`movie${movie.id}`} api={api} movie={movie} />;
+            return <Movie key={movie.id} api={api} movie={movie} />;
 
           })
         }
